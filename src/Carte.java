@@ -1,7 +1,8 @@
 public class Carte implements Comparable<Carte>{
     private String titlu;
     private String autor;
-    private int anAparitie;
+    private int anPublicatie;
+    
     private int nrPagini;
 
     @Override
@@ -17,12 +18,12 @@ public class Carte implements Comparable<Carte>{
     public Carte(String titlu, String autor, int anAparitie, int nrPagini) {
         this.titlu = titlu;
         this.autor = autor;
-        this.anAparitie = anAparitie;
+        this.anPublicatie = anAparitie;
         this.nrPagini = nrPagini;
     }
 
     @Override
     public String toString() {
-        return this.titlu + " " + this.autor + "aparuta in anul" + this.anAparitie;// + Integer.toString(3);
+        return this.titlu + " " + this.autor + "aparuta in anul" + this.anPublicatie;// + Integer.toString(3);
     }
 }
